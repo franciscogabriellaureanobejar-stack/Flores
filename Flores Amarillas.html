@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Para ti mi niña Jazmín 💛</title>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:black;
+      overflow:hidden;
+      font-family:'Segoe UI', sans-serif;
+    }
+
+    /* Texto neón */
+    h1{
+      font-size:3em;
+      color:#fff200;
+      text-shadow:
+        0 0 5px #fff200,
+        0 0 10px #fff200,
+        0 0 20px #ff9100,
+        0 0 40px #ff9100,
+        0 0 80px #ff3d00;
+      animation:flicker 2s infinite;
+    }
+
+    @keyframes flicker{
+      0%,19%,21%,23%,25%,54%,56%,100%{opacity:1;}
+      20%,24%,55%{opacity:0.4;}
+    }
+
+    a{
+      margin-top:20px;
+      display:inline-block;
+      font-size:1.2em;
+      color:#00e5ff;
+      text-decoration:none;
+      text-shadow:
+        0 0 5px #00e5ff,
+        0 0 10px #00e5ff,
+        0 0 20px #00b0ff;
+      border:2px solid #00e5ff;
+      padding:10px 20px;
+      border-radius:12px;
+      box-shadow:0 0 20px #00e5ff;
+      transition:all 0.3s ease;
+    }
+
+    a:hover{
+      background:#00e5ff;
+      color:black;
+    }
+
+    .container{
+      text-align:center;
+    }
+
+    /* Fuegos artificiales */
+    .firework{
+      position:absolute;
+      border-radius:50%;
+      opacity:0;
+      animation:explode 1.5s ease-out infinite;
+    }
+
+    @keyframes explode{
+      0%{transform:scale(0);opacity:1;}
+      80%{opacity:1;}
+      100%{transform:scale(1.5);opacity:0;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Para ti mi niña Jazmín 🌼</h1>
+    <a href="FloresAMarillas.html">Haz clic aquí 💛</a>
+  </div>
+
+  <!-- Fuegos artificiales -->
+  <div class="firework" style="width:10px;height:10px;top:30%;left:40%;background:#ff4081;animation-delay:0s"></div>
+  <div class="firework" style="width:12px;height:12px;top:60%;left:70%;background:#40c4ff;animation-delay:0.5s"></div>
+  <div class="firework" style="width:14px;height:14px;top:50%;left:20%;background:#ffff00;animation-delay:1s"></div>
+  <div class="firework" style="width:16px;height:16px;top:70%;left:50%;background:#76ff03;animation-delay:1.5s"></div>
+
+</body>
+</html>
